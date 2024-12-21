@@ -371,7 +371,7 @@ header {
 .trending-page{
     height: 100%;
     border-radius: 0px 0px 40px 40px;
-    background: linear-gradient(180deg, #C76C98 0%, #632B6C 100%);
+    background: linear-gradient(180deg, #6c8ac7 0%, #2b346c 100%);
 color: white;
 padding: 40px 20px;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Booknest</title>
+    <title>Kgames</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -19,6 +19,14 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -39,21 +47,13 @@
                     <a class="nav-link text-dark dropdown-toggle" href="#" id="dropdownMenuButton"
                         aria-expanded="false"> <i class="fa-solid fa-list"></i> Categories</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="./trending.html">Trending Books</a></li>
-                        <li><a class="dropdown-item" href="./bestsellers.html">Bestsellers to Motion Pictures</a></li>
-                        <li><a class="dropdown-item" href="./crime.html">Crime</a></li>
-                        <li><a class="dropdown-item" href="./fantacy.html">Fantacy</a></li>
-                        <li><a class="dropdown-item" href="./fiction.html">Fiction</a></li>
-                        <li><a class="dropdown-item" href="./finance.html">Finance</a></li>
-                        <li><a class="dropdown-item" href="./historic-fiction.html">Historic Fiction</a></li>
-                        <li><a class="dropdown-item" href="./horror.html">Horror</a></li>
-                        <li><a class="dropdown-item" href="./mystery.html">Mystery</a></li>
-                        <li><a class="dropdown-item" href="./non-fiction.html">Non-Fiction</a></li>
-                        <li><a class="dropdown-item" href="./phychology.html">Phychology</a></li>
-                        <li><a class="dropdown-item" href="./romance.html">Romance</a></li>
-                        <li><a class="dropdown-item" href="./self-care.html">Self Care</a></li>
-                        <li><a class="dropdown-item" href="./thriller.html">Thriller</a></li>
 
+                        <li><a class="dropdown-item" href="./trending.html">&nbsp; Trending Games</a></li>
+                        <li><a class="dropdown-item" href="./action.html">&nbsp; Action</a></li>
+                        <li><a class="dropdown-item" href="./fiction.html">&nbsp; Fiction</a></li>
+                        <li><a class="dropdown-item" href="./mystery.html">&nbsp; Mystery</a></li>
+                        <li><a class="dropdown-item" href="./adventure.html">&nbsp; Adventure</a></li>
+                        
                     </ul>
                 </li>
                 <li><a href="./myaccount.html" class="nav-link px-2 text-dark"><i class="fa-solid fa-user"></i> My
@@ -84,36 +84,29 @@
         <input type="text" id="searchInput" class="search-input" placeholder="Search...">
     </header>
     <nav id="mobile-nav" class="mobile-nav">
-      <div class="nav-header">
-          <div class="logo-left">
-              <a href="./index.html"><img src="./assets/logo/Logo.png" alt="Logo"></a>
-          </div>
-          <div class="close-icon" onclick="toggleMenu()">&times;</div>
-      </div>
-      <ul>
-          <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)"><i class="fa-solid fa-list"></i> Categories</a>
-              <ul class="dropdown-content">
-                  <li><a class="dropdown-item" href="./trending.html">Trending Books</a></li>
-                  <li><a class="dropdown-item" href="./bestsellers.html">Bestsellers to Motion Pictures</a></li>
-                  <li><a class="dropdown-item" href="./crime.html">Crime</a></li>
-                  <li><a class="dropdown-item" href="./fantacy.html">Fantasy</a></li>
-                  <li><a class="dropdown-item" href="./fiction.html">Fiction</a></li>
-                  <li><a class="dropdown-item" href="./finance.html">Finance</a></li>
-                  <li><a class="dropdown-item" href="./historic-fiction.html">Historic Fiction</a></li>
-                  <li><a class="dropdown-item" href="./horror.html">Horror</a></li>
-                  <li><a class="dropdown-item" href="./mystery.html">Mystery</a></li>
-                  <li><a class="dropdown-item" href="./non-fiction.html">Non-Fiction</a></li>
-                  <li><a class="dropdown-item" href="./psychology.html">Psychology</a></li>
-                  <li><a class="dropdown-item" href="./romance.html">Romance</a></li>
-                  <li><a class="dropdown-item" href="./self-care.html">Self Care</a></li>
-                  <li><a class="dropdown-item" href="./thriller.html">Thriller</a></li>
-              </ul>
-          </li>
-          <li><a href="./myaccount.html" class="nav-link"><i class="fa-solid fa-user"></i> My Account</a></li>
-      </ul>
-  </nav>
+        <div class="nav-header">
+            <div class="logo-left">
+                <a href="./index.html"><img src="./assets/logo/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="close-icon" onclick="toggleMenu()">&times;</div>
+        </div>
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)"><i class="fa-solid fa-list"></i>&nbsp; Categories</a>
+                <ul class="dropdown-content mt-2">
+                    <li><a class="dropdown-item" href="./trending.html">&nbsp; Trending Games</a></li>
+                    <li><a class="dropdown-item" href="./action.html">&nbsp; Action</a></li>
+                    <li><a class="dropdown-item" href="./fiction.html">&nbsp; Fiction</a></li>
+                    <li><a class="dropdown-item" href="./mystery.html">&nbsp; Mystery</a></li>
+                    <li><a class="dropdown-item" href="./adventure.html">&nbsp; Adventure</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="./myaccount.html" class="nav-link"><i class="fa-solid fa-user"></i>&nbsp; My Account</a></li>
+        </ul>
+    </nav>
+    
 
 
     <!-- navbar ends here -->
@@ -123,7 +116,7 @@
     <section>
         <div class="container-fluid trending-page">
             <h1>Fiction</h1>
-            <h2>Dive into an imaginative worlds and captivating stories where anything is possible.</h2>
+            <h2>Explore imaginative stories and realms</h2>
         </div>
     </section>
 
@@ -134,98 +127,38 @@
 <section>
     <div class="container gap-top trending-img">
         <div class="container text-center">
-            <div class="row row-cols-2 row-cols-lg-5 g-3 g-lg-3">
+            <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-3">
               <div class="col">
-                <div><a href="./fiction/fiction1.html"><img src="./assets/Fiction/2 A.M. at The Cat_s Pajamas.png" alt=""></a></div>
+                <div><a href="./fiction/fiction1.html"><img src="./assets/Fiction/roadracer.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction2.html"><img src="./assets/Fiction/A Tempest of Tea.png" alt=""></a></div>
+                <div><a href="./fiction/fiction2.html"><img src="./assets/Fiction/robberrun.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction3.html"><img src="./assets/Fiction/Africa Risen A New Era of Speculative.png" alt=""></a></div>
+                <div><a href="./fiction/fiction3.html"><img src="./assets/Fiction/ropeninja.jpg" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction4.html"><img src="./assets/Fiction/All Fours.png" alt=""></a></div>
+                <div><a href="./fiction/fiction4.html"><img src="./assets/Fiction/runvovanrun.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction5.html"><img src="./assets/Fiction/allegiant.png" alt=""></a></div>
+                <div><a href="./fiction/fiction5.html"><img src="./assets/Fiction/scaryrun.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction6.html"><img src="./assets/Fiction/Bruja Born.png" alt=""></a></div>
+                <div><a href="./fiction/fiction6.html"><img src="./assets/Fiction/shootrobbers.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction7.html"><img src="./assets/Fiction/An Education in Malice.png" alt=""></a></div>
+                <div><a href="./fiction/fiction7.html"><img src="./assets/Fiction/skyrace.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction8.html"><img src="./assets/Fiction/Any Bitter Thing.png" alt=""></a></div>
+                <div><a href="./fiction/fiction8.html"><img src="./assets/Fiction/slowdown.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction9.html"><img src="./assets/Fiction/Beautyland.png" alt=""></a></div>
+                <div><a href="./fiction/fiction9.html"><img src="./assets/Fiction/snakeblast.png" alt=""></a></div>
               </div>
               <div class="col">
-                <div><a href="./fiction/fiction10.html"><img src="./assets/Fiction/Behind You Is the Sea.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction11.html"><img src="./assets/Fiction/Black and Blue.png" alt=""></a></div>
+                <div><a href="./fiction/fiction10.html"><img src="./assets/Fiction/snowballworld.png" alt=""></a></div>
               </div>
               
-              <div class="col">
-                <div><a href="./fiction/fiction12.html"><img src="./assets/Fiction/Calling a Wolf a Wolf.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction13.html"><img src="./assets/Fiction/chain gang all stars.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction14.html"><img src="./assets/Fiction/Christmas Presents.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction15.html"><img src="./assets/Fiction/Destroy the Day.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction16.html"><img src="./assets/Fiction/Faith Bass Darling_s Last Garage Sale.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction17.html"><img src="./assets/Fiction/Family Family.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction18.html"><img src="./assets/Fiction/Fourteen Days.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction19.html"><img src="./assets/Fiction/gwendys final task.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction20.html"><img src="./assets/Fiction/How to Behave in a Crowd.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction21.html"><img src="./assets/Fiction/How to Read a Book.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction22.html"><img src="./assets/Fiction/i keep my exoskeletons to myself.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction23.html"><img src="./assets/Fiction/I_m Not Supposed to Be in the Dark.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction24.html"><img src="./assets/Fiction/ice planet barbarians.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction25.html"><img src="./assets/Fiction/pomegranate.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction26.html"><img src="./assets/Fiction/radiance.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction27.html"><img src="./assets/Fiction/So Let Them Burn.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction28.html"><img src="./assets/Fiction/we spread.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction29.html"><img src="./assets/Fiction/when we were bright.png" alt=""></a></div>
-              </div>
-              <div class="col">
-                <div><a href="./fiction/fiction30.html"><img src="./assets/Fiction/You Made a Fool of Death with Your Beauty.png" alt=""></a></div>
-              </div>
             </div>
           </div>
     </div>
